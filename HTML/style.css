@@ -1,0 +1,54 @@
+ <style type="text/css">
+   * {
+font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+   .submit{
+       border-radius: 5px;
+       border: 2px solid grey;
+       width:60px;
+       height: 30px;
+       background-color: #179b7c;
+       color: white;
+       margin-left:350px;
+   }
+   textarea{
+       border-radius: 5px;
+   }
+   
+   input {
+    border-radius: 5px;
+    border: 2px solid grey;
+   }
+   
+   
+   select {
+       border-radius: 5px;
+       width:460px;
+       background-color: #179b7c;
+       color: white;
+       -webkit-appearance: caret ;        
+   }    
+       
+   .topnav {
+         overflow: hidden;
+       }
+
+   .topnav a {
+         float: right;
+         color: #1BE6E6;
+         text-align: center;
+         padding: 30px 16px;
+         text-decoration: none;
+         font-size: 17px;
+       }
+   
+   .topnav h1{
+           float: left;
+           color: #1BE6E6;
+       }
+   h2{
+       background-color: #B9C9C3;
+       padding: 20px 16px;
+       color: white;
+   }
+   </style>
