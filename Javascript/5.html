@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Question 5</title>
+    <script type="text/javascript">
+    	(function(){
+        //Question 5-A: create data having Name, age, salary ,DOB
+        //Since it wasn't mentioned to take data dynamically, I have taken data statically.
+    		var Employee=[
+        { "Name":"Akshit",
+          "age":21,
+          "salary":2000,
+          "DOB":"07Feb"
+        },
+        { "Name":"Akshat",
+          "age":22,
+          "salary":5500,
+          "DOB":"12Nov"
+        },
+        { "Name":"Anuvansh",
+          "age":21,
+          "salary":6000,
+          "DOB":"13Feb"
+        },
+        { "Name":"Anuja",
+          "age":19,
+          "salary":500,
+          "DOB":"31Jan"
+        },
+        { "Name":"Aditya",
+          "age":22,
+          "salary":999,
+          "DOB":"05Jan"
+        }
+        ];
+        console.log("//Question 5-A: create data having Name, age, salary ,DOB");
+        console.log("All the employees and their detail used are as follows\n "+JSON.stringify(Employee)+"\n\n\n\n");
+
+
+
+
+        //Creating table of all the Employees with their details and displaying it in the visible area of webpage
+        var rows="<table style='border:1px solid black; margin: auto;'><tr><th>Name</th><th>age</th><th>salary</th><th>DOB</th></tr>"; 
+        Employee.forEach(function(emp)
+          {rows+="<tr><td>"+emp["Name"]+"</td><td>"+emp["age"]+"</td><td>"+emp["salary"]+"</td><td>"+emp["DOB"]+"</td></tr>";}
+          );
+          rows+="</table>";
+        window.onload = function what(){document.getElementById("tablearea").innerHTML=rows;};  //displaying table of Employees when page is ready
+
+
+        //isSAL_GT_5K function finds all employee whose salary is greater than 5000
+        function isSAL_GT_5K(value){
+          if( value["salary"]>5000)
+            return value;
+        }
+
+        //isSAL_LT_1K function finds all employees whos salary is less than 1000
+        function isSAL_LT_1K(value){
+           if( value["salary"]<1000)
+            return value;
+        }
+
+        //isAGE_GT_20 function finds all the employees whose age is greater than 20
+        function isAGE_GT_20(value){
+           if( value["age"]>20)
+            return value;
+        }
+
+        //Question 5-B: filter all employees with salary greater than 5000
+        var Employee_sal_gt_5k=Employee.filter(isSAL_GT_5K);  //isSAL_GT_5K function checks for employee who have salary greater than 5000
+        console.log("//Question 5-B: filter all employees with salary greater than 5000\n");
+        console.log(JSON.stringify(Employee_sal_gt_5k)+"\n\n\n\n");
+
+
+
+
+        //Question 5-C: group employee on the basis of their age
+        var EmployeeInAgeRange_16_to_20=[];// this array store the data of those employee who are in age range of 16-20 years 
+        var EmployeeInAgeRange_21_to_25=[];// this array store the data of those employee who are in age range of 21-25 years
+        Employee.forEach(function(emp){
+          if(emp["age"]>15 && emp["age"]<=20)
+            EmployeeInAgeRange_16_to_20.push(emp);
+          if(emp["age"]>20 && emp["age"]<=25)
+            EmployeeInAgeRange_21_to_25.push(emp);
+        });
+        console.log("//Question 5-C: group employee on the basis of their age");
+        console.log("Employee in age range 16-20 years are \n"+JSON.stringify(EmployeeInAgeRange_21_to_25)+"\n\n");
+        console.log("Employee in age range 21-25 years are \n"+JSON.stringify(EmployeeInAgeRange_16_to_20)+"\n\n\n\n");
+
+
+
+
+        //Question 5-D: fetch employees with salary less than 1000 and age greater than 20. Then give them an increment 5 times their salary.
+        var Employee_sal_lt_1k_age_gt_20=(Employee.filter(isSAL_LT_1K)).filter(isAGE_GT_20);  //isSAL_GT_5K function checks for employee who have salary greater than 5000
+        console.log(
+          "//Question 5-D: fetch employees with salary less than 1000 and age greater than 20. Then give them an increment 5 times their salary."
+          );
+        Employee_sal_lt_1k_age_gt_20.forEach(function(emp){
+          emp["salary"]=emp["salary"]+5*emp["salary"];
+        });
+        console.log(
+          "Employees details(with salary less than 1000 and age above 20) after giving them an increment of 5 times their salary are as follows\n"
+          +JSON.stringify(Employee_sal_lt_1k_age_gt_20)
+          +"\n\n\n\n"
+          );
+
+    	}());
+    </script>
+  </head>
+
+
+  <body>
+      <h4 style="color: blue;">Question 5 : Create a list of objects of Employee with info as follow :</h4>
+      <ul>
+        <li> Name, age, salary ,DOB</li>
+        <li> filter all employees with salary greater than 5000</li>
+        <li> group employee on the basis of their age</li>
+        <li> fetch employees with salary less than 1000 and age greater than 20. Then give them an increment 5 times their salary.</li>
+      </ul>
+      <br />
+      <p>Data used in given problem is taken statically since it wasn't mentioned to make it dynamically.</p>
+      <br />
+      <div id="tablearea"></div>
+      <br />
+      <h4 style="color: red;">Open Console Tab in Developer Tools</h4>
+      </table>
+  </body>
+</html>
+
