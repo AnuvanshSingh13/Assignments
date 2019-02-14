@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Question 9
+	</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("select").on("change",function(){
+				$("div").append(this.value);
+			});
+		});
+	</script>
+</head>
+<body>
+<h1>Question 9: Get dropdown selected value on onchanage event and append in div container</h1>
+<hr />
+<label>Select City</label>
+<select name="City">
+	<option value="Lucknow">Lucknow</option>
+	<option value="Noida">Noida</option>
+	<option value="Delhi">Delhi</option>
+	<option value="Kanpur">Kanpur</option>
+	<option value="Gurugram">Gurugram</option>
+	<option value="Faridabad">Faridabad</option>
+</select>
+<div>Selected cities are: </div>
+</body>
+</html>

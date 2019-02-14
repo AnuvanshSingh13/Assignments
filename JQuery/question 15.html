@@ -1,0 +1,51 @@
+
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>question 15</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        
+
+            $.get("https://jsonplaceholder.typicode.com/todos/1", function(data){
+
+                // Display the returned data in browser
+
+                $("#result").html(JSON.stringify(data));
+                alert("Data Loaded successfully")
+
+            
+
+        });
+
+    });
+
+    </script>
+
+    </head>
+
+    <body>
+
+        
+            <h2>Retrive the data from server using ajax get call</h2>
+
+       <div id="result">
+ </div>
+            <h5>Data will be loaded here</h5>
+        
+
+    </body>
+
+    </html>
+

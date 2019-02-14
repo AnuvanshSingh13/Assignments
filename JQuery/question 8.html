@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Question 8
+	</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(document).on("click",".clickButton",
+				function(){
+				var el=$("<button class='clickButton'>click</button> ");
+				($(this).parent()).append(el);
+			})
+			});
+	</script>
+</head>
+<body>
+<h1>Question 8: Click event not working on element which added dynamicly or via script, make it work using .on method</h1>
+<hr />
+<button class="clickButton">click</button>
+</body>
+</html>

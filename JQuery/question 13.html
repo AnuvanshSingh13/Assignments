@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+  	$("div").each(function(){
+    alert("Height of div: " + $("div").css("max-height"));
+});
+  });
+});
+</script>
+</script>
+</head>
+<body>
+<div style="max-width: 200px; max-height: 150px;overflow: auto;">
+  <span>abc</span><br/>
+  <span>def</span><br/>
+  <span>ghi</span><br/>
+  <span>jkl</span><br/>
+</div>
+<button>click me</button>
+
+
+</body>
+</html>

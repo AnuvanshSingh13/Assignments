@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $(".hover").hover(
+ 	function(){
+ 		$("#cities").stop(true,true).slideDown("slow");
+ 	},
+ 	function(){
+ 		$("#cities").stop(true,true).slideUp("slow");
+ 	}
+ );
+});
+</script><style type="text/css">
+	label{
+		border-color: 1px solid green;
+		color: red;
+	}
+	#cities{
+		display: none;
+	}
+</style>
+</head>
+<body>
+
+<div class ="hover">
+	<label>cities</label>
+	<div id="cities">
+		<label>Lko</label>
+		<label>noida</label>
+		<label>del</label>
+		<label>gurugram</label>
+		<label>Banaras</label>
+	</div>
+</div>
+</body>
+</html>

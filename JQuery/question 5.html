@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".target").filter(function(){
+  	return(($(this).parent()).is("#main"))
+  }).css("font-size","100px");
+  });
+
+</script>
+
+</head>
+<body>
+
+<p>Question: Change the font size of ".target" which has parent element with id name "#main"</p>
+
+<div id ="main">this is main <br/>
+<p class ="target">This is a target in paragraph.</p>
+
+</div><br/>
+<div id ="not-main">this is not main <br/>
+<p class ="target">This is a target in paragraph.</p>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>question 15</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        
+
+            $.get("https://jsonplaceholder.typicode.com/posts?userId=1", function(data){
+
+                var el; var row=[];
+                for (var i = 0; i < data.length; i++) {
+                    row=data[i];
+                    el+="<tr><td>"+row["userId"]+"</td><td>"+row["id"]+"</td><>td"+row["title"]+"</td><td>"+row["body"]+"</td><td>"+
+                    "<button class='delete' id="+i+">X</button></td></tr>";
+                }
+                $("table").append(el);
+                alert("Data Loaded successfully");
+
+
+            
+
+        });
+            $(document).on("click",".delete",function(){
+                $("#"+$(this).attr('id')).parent().parent().remove();
+            });
+
+    });
+
+    </script>
+
+    </head>
+
+    <body >
+
+        
+            <h2>Add cross button on row and bind click function which make a delete request to server, after success event remove the row from dom</h2>
+            <table border= "1px solid green">
+                <tr>
+                    <th>User ID</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                   
+                    <th>Action</th>
+                </tr>
+            </table>
+        
+
+    </body>
+
+    </html>
+

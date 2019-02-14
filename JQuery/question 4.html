@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+   $("[type=submit]").attr("disabled",true);
+  });
+
+</script>
+</head>
+<body>
+
+<p>question: Disable submit button using jquery attr method</p>
+<form action="" method="get">
+<label>Name :</label>
+<input id="name" name="name" placeholder="Ex: Albert" type="text" value="">
+<label>Email :</label>
+<input id="email" name="email" placeholder="Ex: albert@gmail.com" type="text" value="">
+<label>Message :</label>
+<textarea id="message" placeholder="Ex: Hi! Wassup"></textarea>
+<input id="submit" type="submit" value="Submit">
+</form>
+
+</body>
+</html>
