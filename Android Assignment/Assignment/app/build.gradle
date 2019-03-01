@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    signingConfigs {
+        QA {
+            storeFile file("/home/ttn/AndroidStudioProjects/Assignment/app/qa.jks")
+            storePassword "123456"
+            keyAlias "key0"
+            keyPassword "123456"
+        }
+        PROD {
+            storeFile file("/home/ttn/AndroidStudioProjects/Assignment/app/Assignment.jks")
+            storePassword "123456"
+            keyAlias "keyprod"
+            keyPassword "123456"
+        }
+        DEV {
+            storeFile file("/home/ttn/AndroidStudioProjects/Assignment/app/dev.jks")
+            storePassword "123456"
+            keyAlias "keyd"
+            keyPassword "123456"
+        }
+    }
+    defaultConfig {
+        applicationId "com.example.assignment"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    flavorDimensions "default"
+    productFlavors {
+        QA {
+            applicationId "com.example.assignment.qa"
+            dimension "default"
+            signingConfig signingConfigs.QA
+        }
+        PROD {
+            applicationId "com.example.assignment.prod"
+            dimension "default"
+            signingConfig signingConfigs.PROD
+        }
+        DEV {
+            applicationId "com.example.assignment.dev"
+            dimension "default"
+            signingConfig signingConfigs.DEV
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':login')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
