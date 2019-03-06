@@ -32,6 +32,7 @@
         android:textColorHint="#ffffff"
 
         android:layout_marginTop="100dp"/>
+
     <EditText
         android:id="@+id/editText2"
         android:layout_width="350dp"
@@ -45,6 +46,13 @@
        android:textAlignment="center"
         android:layout_gravity="center"
         android:background="@drawable/button_layout_self"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Remember me"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
