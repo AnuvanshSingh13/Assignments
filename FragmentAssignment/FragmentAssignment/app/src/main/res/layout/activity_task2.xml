@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_activity_task2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+
+    <Button
+        android:id="@+id/addFragment1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="addFrg1"
+        android:text="@string/add_fragment_1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal" />
+
+    <Button
+        android:id="@+id/removeFragment1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="remFrg1"
+        android:text="@string/remove_fragment_1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addFragment1" />
+
+    <Button
+        android:id="@+id/replaceWithFragment1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="replaceWithFrg1"
+        android:text="@string/replace_with_fragment_1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/removeFragment1" />
+
+    <Button
+        android:id="@+id/showFragment1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="showFrg1"
+        android:text="@string/show_fragment_1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/replaceWithFragment1" />
+
+    <Button
+        android:id="@+id/hideFragment1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="hideFrg1"
+        android:text="@string/hide_fragment_1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showFragment1" />
+
+
+    <Button
+        android:id="@+id/addFragment2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="addFrg2"
+        android:text="@string/add_fragment_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal" />
+
+    <Button
+        android:id="@+id/removeFragment2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="remFrg2"
+        android:text="@string/remove_fragment_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/addFragment1" />
+
+    <Button
+        android:id="@+id/replaceWithFragment2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="replaceWithFrg2"
+        android:text="@string/replace_with_fragment_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/removeFragment1" />
+
+    <Button
+        android:id="@+id/showFragment2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="showFrg2"
+        android:text="@string/show_fragment_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/replaceWithFragment1" />
+
+    <Button
+        android:id="@+id/hideFragment2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="hideFrg2"
+        android:text="@string/hide_fragment_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/showFragment2" />
+
+</android.support.constraint.ConstraintLayout>

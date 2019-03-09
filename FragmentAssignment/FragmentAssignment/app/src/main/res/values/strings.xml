@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">FragmentAssignment</string>
+    `
+    <string name="task4_txt">Develop a sample that show the UI like below and use Dialog fragment, List fragment, Preference Fragment )</string>
+    <string name="task1_txt">Observe life cycle of fragment with activity</string>
+    <string name="task2_txt">Observe Lifecycle of Fragment with activity while using Add, Replace, hide, show, remove</string>
+    <string name="task3_txt">Dialog fragment, Preference Fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sample_text_fragment1_task2">Hello from fragment1</string>
+    <string name="sample_text_fragment2_task2">Hello from fragment2</string>
+    <string name="sample_text_fragment_task1">This is textview from fragment</string>
+    <string name="add_fragment_1">Add Fragment 1</string>
+    <string name="remove_fragment_1">Remove Fragment 1</string>
+    <string name="replace_with_fragment_1">replace with fragment1</string>
+    <string name="show_fragment_1">Show Fragment 1</string>
+    <string name="hide_fragment_1">Hide Fragment 1</string>
+
+    <string name="add_fragment_2">Add Fragment 2</string>
+    <string name="remove_fragment_2">Remove Fragment 2</string>
+    <string name="replace_with_fragment_2">replace with fragment2</string>
+    <string name="show_fragment_2">Show Fragment 2</string>
+    <string name="hide_fragment_2">Hide Fragment 2</string>
+    <string name="show_preference_fragment">Show Preference Fragment</string>
+    <string name="show_dialog_fragment">Show Dialog Fragment</string>
+
+
+    <string-array name="coutries">
+        <item>Republic of India</item>
+        <item>USA</item>
+        <item>China</item>
+        <item>Japan</item>
+        <item>UAE</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">User Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">submit</string>
+
+</resources>

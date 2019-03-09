@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="name"
+        android:summary="Enter your name"
+        android:title="Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="student"
+        android:summary="Confirm if you are a student?"
+        android:title="Student" />
+    <ListPreference
+        android:key="country"
+        android:entries="@array/coutries"
+        android:entryValues="@array/coutries"
+        android:summary="Select your country"
+        android:title="Country"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="subscribe"
+        android:summary="Select to subscribe"
+        android:title="Subscribe" />
+</PreferenceScreen>
