@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DatabaseExample</string>
+    <string name="product_name">Product name</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_quantity">Enter quantity</string>
+    <string name="Enter_Designmation">Designation</string>
+    <string name="employee_name">name</string>
+    <string name="Enter_Salary">Salary</string>
+</resources>
