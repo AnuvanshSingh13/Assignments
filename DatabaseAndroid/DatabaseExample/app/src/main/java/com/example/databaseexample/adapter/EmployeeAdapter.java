@@ -36,13 +36,13 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeViewHolder>{
     public void onBindViewHolder(EmployeeViewHolder holder, int position) {
         final Employee singleProduct = listProducts.get(position);
         holder.name.setText(singleProduct.getName());
-        holder.editProduct.setOnClickListener(new View.OnClickListener() {
+        holder.editEmployee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 editTaskDialog(singleProduct);
             }
         });
-        holder.deleteProduct.setOnClickListener(new View.OnClickListener() {
+        holder.deleteEmployee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //delete row from database
