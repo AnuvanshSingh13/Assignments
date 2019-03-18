@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NotificationExample</string>
+    <string name="Task">task</string>
+    <string name="Task2">Task2</string>
+    <string name="Task4">Task4</string>
+    <string name="Notification">Notification</string>
+    <string name="notification">Notification</string>
+    <string name="set_alert">Alert</string>
+    <string name="button">Button</string>
+</resources>
