@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WebServiceExample</string>
+    <string name="httpUrlconnection">Http_Button</string>
+    <string name="retrofitconnection">Retrofit_button</string>
+</resources>
