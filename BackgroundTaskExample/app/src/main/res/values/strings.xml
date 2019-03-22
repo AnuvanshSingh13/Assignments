@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BackgroundTaskExample</string>
+    <string name="text_task_desrciption">taskDescription</string>
+</resources>
